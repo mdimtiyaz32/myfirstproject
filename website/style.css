@@ -1,0 +1,254 @@
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    /* ===== HEADER & NAVBAR ===== */
+    header {
+      background: #007bff;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.6em;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    ul li a:hover {
+      color: #ffe600;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(23, 23, 23, 0.5), rgba(0, 0, 0, 0.5)),
+        url("jagannath2.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      color: white;
+      padding-top: 50px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      max-width: 700px;
+      color: #e0e0e0;
+    }
+
+    /* ===== SECTION COMMON ===== */
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2.3em;
+      margin-bottom: 20px;
+      color: #923131;
+    }
+
+    p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* ===== COURSES ===== */
+    .courses {
+      max-width: 900px;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .courses h3 {
+      margin-top: 12px;
+      color: #007bff;
+    }
+
+    /* ===== SMART CAMPUS ===== */
+    .campus-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .campus-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .campus-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .campus-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* ===== FACILITIES ===== */
+    .facilities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .facility-card {
+      background: white;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .facility-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .facility-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .facility-card h4 {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    /* ===== STUDENTS ===== */
+    .student-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .student-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 230px;
+      padding: 25px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .student-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .student-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+    }
+
+    .student-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .student-card p {
+      margin: 4px 0;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    .student-card .quote {
+      font-style: italic;
+      font-size: 0.85em;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      ul {
+        flex-direction: column;
+        background: #005ecb;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+      }
+
+      ul.active {
+        display: flex;
+      }
+    }
+  </style>

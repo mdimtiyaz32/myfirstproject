@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAGANNATH UNIVERSITY</title>
+  <link rel="stylesheet"href="style.css">
+
+  <!-- <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    /* ===== HEADER & NAVBAR ===== */
+    header {
+      background: #007bff;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.6em;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    ul li a:hover {
+      color: #ffe600;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(23, 23, 23, 0.5), rgba(0, 0, 0, 0.5)),
+        url("jagannath2.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      color: white;
+      padding-top: 50px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      max-width: 700px;
+      color: #e0e0e0;
+    }
+
+    /* ===== SECTION COMMON ===== */
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2.3em;
+      margin-bottom: 20px;
+      color: #923131;
+    }
+
+    p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* ===== COURSES ===== */
+    .courses {
+      max-width: 900px;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .courses h3 {
+      margin-top: 12px;
+      color: #007bff;
+    }
+
+    /* ===== GLOBAL CAMPUS ===== */
+    .campus-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .campus-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .campus-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .campus-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* ===== FACILITIES ===== */
+    .facilities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .facility-card {
+      background: white;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .facility-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .facility-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .facility-card h4 {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    /* ===== STUDENTS ===== */
+    .student-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .student-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 230px;
+      padding: 25px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .student-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .student-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+    }
+
+    .student-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .student-card p {
+      margin: 4px 0;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    .student-card .quote {
+      font-style: italic;
+      font-size: 0.85em;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      ul {
+        flex-direction: column;
+        background: #005ecb;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+      }
+
+      ul.active {
+        display: flex;
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav>
+      <h1>JAGANNATH UNIVERSITY</h1>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#courses">COURSES</a></li>
+        <li><a href="#campus">CAMPUS</a></li>
+        <li><a href="#freshers">FRESHERS</a></li>
+        <li><a href="#resources"> RESOURCES </a></li>
+        <li><a href="#feedback"> FEEDBACK</a></li>
+        <li><a href="#chairman">  CHAIRMAN </a></li>
+        <li><a href="#management">MANAGEENT </a></li>
+        <li><a href="#registration"> REGISTRATION </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <h2>WELCOME TO JAGANNATH UNIVERSITY</h2>
+    <p>Where knowledge Meets Innovation</p>
+  </section>
+
+  <!-- ===== COURSES ===== -->
+  <section id="courses" class="section">
+    <h2>AVAILABLE  COURSES </h2>
+    <div class="courses">
+      <p>The Available Courses section provides
+       detailed information about all the programs
+      offered by our university, including
+      undergraduate, postgraduate, and diploma courses across multiple streams.</p>
+      <h3>1. MCA (Master of Computer Science)</h3>
+      <h3>2. MBA (Master of Business Administration)</h3>
+      <h3>3. Diploma (Civil, Mechanical, Electrical)</h3>
+      <h3>4. BCA (Bachelor of Computer Applications)</h3>
+      <h3>5. B.Tech (Civil, Computer Science, Electrical, Mechanical)</h3>
+      <h3>6. BPT (Bachelor of Physiotherapy)</h3>
+      <h3>7. Pharmacy (Bachelor of Pharmacy)</h3>
+    </div>
+  </section>
+
+  <!-- ===== SMART CAMPUS ===== -->
+  <section id="campus" class="section">
+    <h2>OUR SMART CAMPUS </h2>
+    <p>Beautiful campuses of Jagannath University with great facilities and environment.</p>
+    <div class="campus-container">
+      <div class="campus-card"><img src="jagannath2.jpg" alt="Campus 1"></div>
+      <div class="campus-card"><img src="jagannath.jpg" alt="Campus 2"></div>
+      <div class="campus-card"><img src="jagannath1.jpg" alt="Campus 3"></div>
+        <div class="campus-card"><img src="jagannath4.jpg" alt="Campus 3"></div>
+          <div class="campus-card"><img src="jagannath5.webp" alt="Campus 3"></div>
+            <div class="campus-card"><img src="jagannath6.webp" alt="Campus 3"></div>
+    </div>
+  </section>
+
+  <!-- ===== FRESHERS PARTY ===== -->
+  <section id="freshers" class="section">
+    <h2>FRESHERS PARTY</h2>
+    <p>Beautiful dance and celebrations at Jagannath University</p>
+    <div class="campus-container">
+      <div class="campus-card"><img src="dance1.jpg" alt="Dance 1"></div>
+      <div class="campus-card"><img src="dance2.jpg" alt="Dance 2"></div>
+      <div class="campus-card"><img src="dance3.jpg" alt="Dance 3"></div>
+      <div class="campus-card"><img src="permish.jpeg" alt="Dance 4"></div>
+      <div class="campus-card"><img src="dance5.jpg" alt="Dance 5"></div>
+      <div class="campus-card"><img src="dance4.jpg" alt="Dance 6"></div>
+    </div>
+  </section>
+
+  <!-- ===== FACILITIES ===== -->
+  <section id="resources" class="section">
+    <h2>CAMPUS  RESOURCES </h2>
+    <p>From academics to recreation, our campus supports every aspect of student life.</p>
+
+    <div class="facilities">
+      <div class="facility-card">
+        <img src="library.jpeg" alt="Library">
+        <h4>CLASS LIBRARY</h4>
+        <p>A digital hub for reading, learning, and innovation.</p>
+      </div>
+
+      <div class="facility-card">
+        <img src="basket.jpeg" alt="Playground">
+        <h4> LARGEST PLAYGROUND </h4>
+        <p>Where students play, practice, and build discipline.</p>
+      </div>
+
+      <div class="facility-card">
+        <img src="canteen.avif" alt="Food">
+        <h4> TESTY AND HEALTHY FOOD </h4>
+        <p>A canteen that blends taste with nutrition.</p>
+      </div>
+
+      <div class="facility-card">
+        <img src="cricket.jpeg" alt="Cricket">
+        <h4>CRICKET</h4>
+        <p>Professional cricket facilities to train future champions.</p>
+      </div>
+
+
+      <div class="facility-card">
+        <img src="kabadi.jpeg" alt="Cricket">
+        <h4>KABADI</h4>
+        <p>The Kabaddi group represents the spirit of
+         teamwork, strength, and discipline among our
+         students. It encourages physical fitness and sportsmanship on campus.</p>
+      </div>
+
+        <div class="facility-card">
+        <img src="khokho1.jpeg" alt="Cricket">
+        <h4>KHO KHO</h4>
+        <p>The Kho-Kho team showcases agility, 
+         coordination, and team spirit. It helps students
+         build physical endurance and strategic thinking.</p>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STUDENTS FEEDBACK ===== -->
+  <section id="feedback" class="section">
+    <h2>STUDENT FEEDBACK /SUGGESTIONS/ EXPERIENCES </h2>
+    <div class="student-section">
+      <div class="student-card">
+        <img src="md4.jpg" alt="Md imtiyaz">
+        <h3>Md Imtiyaz</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"Helps students build a strong foundation in their field."</p>
+      </div>
+
+
+      <div class="student-card">
+        <img src="iliyas.jpg" alt="iliyas">
+        <h3>Iliyas Ahamad</h3>
+        <p>MCA student (2023–2025)</p>
+        <p class="quote">" Professors are approachable and knowledgeable. "</p>
+         </div>
+
+
+
+      
+      <div class="student-card">
+        <img src="rohit.jpg" alt="Rohit kumar">
+        <h3>Rohit kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"offers diverse range of courses"</p>
+      </div>
+
+      <div class="student-card">
+        <img src="nitis.jpg" alt="nitis kumar">
+        <h3>Nitish kumar</h3>
+        <p> BPT student (2023–2028)</p>
+        <p class="quote">"Equipped me with problem solving"</p>
+      </div>
+
+      <div class="student-card">
+        <img src="shahbaz.jpg" alt="md shahbaz">
+        <h3>Md shahbaz Khan</h3>
+        <p>B.Tech student (2023–2027)</p>
+        <p class="quote">"Tech head of the jnu and also the part of the student council"</p>
+      </div>
+
+
+         <div class="student-card">
+        <img src="akash.jpg" alt="akashkumar">
+        <h3>Akash kumar</h3>
+        <p>BCA student (2023–2026)</p>
+        <p class="quote">"great platform to enhance technical knowledge"</p>
+         </div>
+
+            <div class="student-card">
+        <img src="pawan.jpg" alt="pawan kumar">
+        <h3>Pawan kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"supportive teachers and friendly"</p>
+         </div>
+
+            <div class="student-card">
+        <img src="sajan.jpg" alt="sajan kumar">
+        <h3>Sajan kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"Motivate us to think creatively"</p>
+         </div>
+
+            <div class="student-card">
+        <img src="dilip.jpg" alt="dilip kumar">
+        <h3>Dilip kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"Head on the lab helped me understand core concepts"</p>
+         </div>
+
+            <div class="student-card">
+        <img src="ankit2.jpg" alt="aryan kumar">
+        <h3>Ankit Soni</h3>
+        <p>B.Tech student (2022–2026)</p>
+        <p class="quote">"provids excellent opportunities for growth"</p>
+         </div>
+
+            <div class="student-card">
+        <img src="inderjeet.jpg" alt="inderjeet">
+        <h3>Indrajeet kumar</h3>
+        <p>BPT student (2023–2028)</p>
+        <p class="quote">" Improved my communication and teamwork skills "</p>
+         </div>
+
+            <div class="student-card">
+        <img src="ankit.jpg" alt="amkit">
+        <h3>Ankit kumar tiwari</h3>
+        <p>B.tech student (2023–2027)</p>
+        <p class="quote">"I aim to contribute to the university and represent it positively"</p>
+         </div>
+
+            <div class="student-card">
+        <img src="ankur.jpg" alt="ankur">
+        <h3>Ankur Raj</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"the practical sessions are very helpful"</p>
+         </div>
+
+          <div class="student-card">
+        <img src="sohaib.jpg" alt="sohaib">
+        <h3> Md Sohaib </h3>
+        <p>BCA student (2024–2027)</p>
+        <p class="quote">"Alway encourages innovation and new ideas"</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="aryan.jpg" alt="aryan kumar">
+        <h3>Aryan kumar</h3>
+        <p>B.Tech student (2023–2027)</p>
+        <p class="quote">"the compus envirinment encourages learning"</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="aadit.jpg" alt="aaditya">
+        <h3>Aaditya Soni</h3>
+        <p> BCA student (2023–2026)</p>
+        <p class="quote">"collage help in overall personality development"</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="dhiraj.jpg" alt="dhirajkumar">
+        <h3>Dhiraj kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"learning here is fun and interactive "</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="krish.jpg" alt="krish kumar">
+        <h3>Krishnandan kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"practical knowledge matters more than theory here"</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="sahil.jpg" alt="sahil">
+        <h3>Sahil Ansari</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"faculty member are always ready to help"</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="rishav.jpg" alt="rishav">
+        <h3>Rishav Raj</h3>
+        <p>MCA student (2023–2025)</p>
+        <p class="quote">"the placement training sessions are really helpful"</p>
+         </div>
+
+
+          <div class="student-card">
+        <img src="amritesh.jpg" alt="aryan kumar">
+        <h3>Amritesh kumar</h3>
+        <p>BCA student (2023–2026)</p>
+        <p class="quote">"provide opportunities to participte in technical fests"</p>
+         </div>
+
+           <div class="student-card">
+        <img src="omprakash.jpg" alt="om">
+        <h3>Omprakash Yadav</h3>
+        <p>B.Tech student (2022–2026)</p>
+        <p class="quote">"Improved my leadership and management skills"</p>
+         </div>
+
+           <div class="student-card">
+        <img src="anish.jpg" alt="anish">
+        <h3>Anish kumar</h3>
+        <p>Diploma student (2023–2026)</p>
+        <p class="quote">"the collage focuses on bot5h academics and innovation "</p>
+         </div>
+
+           <div class="student-card">
+        <img src="anubhav.jpg" alt="anubhav">
+        <h3>Anubhav Gupta</h3>
+        <p>BCA student (2022–2025)</p>
+        <p class="quote">"proud to be a part of this institution"</p>
+         </div>
+    </div>
+     
+    </div>
+  </section>
+
+
+
+  <!-- ===== CHAIRMAN ===== -->
+  <section id="chairman" class="section">
+    <h2>CHAIRMAN OF JAGANNATH UNIVERSITY</h2>
+    <div class="student-section">
+      <div class="student-card">
+        <img src="chairman.jpeg" alt="Chairman">
+        <h3>Deepak Gupta</h3>
+        <p>Chairman of Jagannath University</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOP MANAGEMENT ===== -->
+  <section id="management" class="section">
+    <h2>TOP MANAGEMENT MEMBERS</h2>
+    <div class="student-section">
+      <div class="student-card">
+        <img src="vaishali.jpg" alt="Vaishali">
+        <h3>Dr. Vaishali Sharma</h3>
+        <p>Pro Vice Chancellor of Jagannath University</p>
+      </div>
+
+      <div class="student-card">
+        <img src="tanmay.jpeg" alt="Tanmay">
+        <h3>Tanmay Pattnayak</h3>
+        <p>Registrar and Controller of Examination</p>
+      </div>
+
+      <div class="student-card">
+        <img src="opsharma.webp" alt="OP Sharma">
+        <h3>Dr. Om Prakash Sharma</h3>
+        <p>Pro President and Dean, Faculty of Engineering & Technology</p>
+      </div>
+
+      <div class="student-card">
+        <img src="israni.jpeg" alt="Rakesh">
+        <h3>Rakesh Israni</h3>
+        <p>Administration of Jagannath University</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REGISTRATION FORM ===== -->
+  <h2 id="registration" align="center">Student Registration Form</h2>
+  <form>
+    <table align="center" cellpadding="8" border="1">
+      <tr><td>Student Name:</td><td><input type="text" name="student_name" required></td></tr>
+      <tr><td>Mobile No.:</td><td><input type="text" name="mobile" required></td></tr>
+      <tr><td>Email Id:</td><td><input type="email" name="email" required></td></tr>
+      <tr><td>Father Name:</td><td><input type="text" name="father_name" required></td></tr>
+      <tr><td>Mother Name:</td><td><input type="text" name="mother_name" required></td></tr>
+      <tr>
+        <td>Select Course:</td>
+        <td>
+          <select name="course" required>
+            <option value="">Select...</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+            <option value="Diploma">Diploma</option>
+            <option value="BPT">BPT</option>
+            <option value="Pharmacy">Pharmacy</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td>Apply Date:</td><td><input type="date" name="dob" required></td></tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="Male"> Male
+          <input type="radio" name="gender" value="Female"> Female
+        </td>
+      </tr>
+      <tr><td>Student Photo:</td><td><input type="file" name="photo"></td></tr>
+      <tr><td>Document Upload:</td><td><input type="file" name="document"></td></tr>
+      <tr>
+        <td>Select Branch:</td>
+        <td>
+          <input type="radio" name="branch" value="CSE"> CSE
+          <input type="radio" name="branch" value="EE"> EE
+          <input type="radio" name="branch" value="ME"> ME
+          <input type="radio" name="branch" value="Civil"> Civil
+        </td>
+      </tr>
+      <tr><td>Address:</td><td><textarea name="address" rows="3" cols="30"></textarea></td></tr>
+      <tr><td colspan="2" align="center"><input type="submit" value="Submit"></td></tr>
+    </table>
+  </form>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 Jagannath University | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
